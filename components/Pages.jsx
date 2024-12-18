@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image"; // Use Next.js Image component for better optimization
-import { useResponsiveness } from "../hooks/useResponsiveness";
+import { useResponsiveness } from "./hooks/useResponsiveness";
 
 // Images in the public folder for Next.js
 const images = [

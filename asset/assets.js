@@ -1,5 +1,5 @@
 import image from "./about.jpg";
-import about from "./about.jpg";
+import About from "./about.jpg";
 import aboutA from "./aboutA.jpg";
 import aboutB from "./aboutB.jpg";
 import aboutC from "./aboutC.jpg";
@@ -11,14 +11,13 @@ import service5 from "./Service5.jpeg";
 import service6 from "./Service6.jpeg";
 import fixed from "./fixed.jpg";
 import hero from "./hero.jpg";
-import image from "./image.jpg";
 import img from "./img.jpg";
 import logo from "./logo.png";
 import nemesis from "./nemesis.jpg";
 import ima from "./ima.jpg";
 
-const imageCollection = {
-    about,
+const assets = {
+    About,
     aboutA,
     aboutB,
     aboutC,
@@ -37,4 +36,4 @@ const imageCollection = {
     ima,
 }
 
-export default imageCollection;
+export default assets;

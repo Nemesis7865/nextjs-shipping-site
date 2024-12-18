@@ -1,6 +1,7 @@
-import React from 'react';
-import { logo } from '../assets/images'; // Make sure to replace this with the correct path to your logo image
-import Link from 'next/link';
+import React from "react";
+import Image from "next/image";
+import assets from "@/asset/assets";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -13,7 +14,7 @@ const Navbar = () => {
           <div className="flex justify-between items-center w-full max-w-7xl px-4">
             {/* Logo */}
             <div className="flex items-center space-x-2">
-              <img src={logo} alt="Logo" className="w-32" />
+              <img src={assets.logo} alt="Logo" className="w-32" />
               <h1 className="font-semibold text-lg">Logistic Slogan</h1>
             </div>
 
@@ -41,50 +42,62 @@ const Navbar = () => {
             {/* Navigation Links */}
             <div
               className={`lg:flex lg:items-center lg:space-x-4 ${
-                isOpen ? 'block' : 'hidden'
+                isOpen ? "block" : "hidden"
               } transition duration-300 ease-in-out`}
             >
               <ul className="flex flex-col lg:flex-row lg:space-x-4">
                 <li>
-                  <Link href="/" passHref>
-                    <a className="block px-2 py-2 hover:bg-gray-200 transition">
-                      Home
-                    </a>
+                  <Link
+                    href="/"
+                    passHref
+                    className="block px-2 py-2 hover:bg-gray-200 transition"
+                  >
+                    Home
                   </Link>
                 </li>
                 <li>
-                  <Link href="/aboutus" passHref>
-                    <a className="block px-2 py-2 hover:bg-gray-200 transition">
-                      About Us
-                    </a>
+                  <Link
+                    href="/aboutus"
+                    passHref
+                    className="block px-2 py-2 hover:bg-gray-200 transition"
+                  >
+                    About Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="/services" passHref>
-                    <a className="block px-2 py-2 hover:bg-gray-200 transition">
-                      Services
-                    </a>
+                  <Link
+                    href="/services"
+                    passHref
+                    className="block px-2 py-2 hover:bg-gray-200 transition"
+                  >
+                    Services
                   </Link>
                 </li>
                 <li>
-                  <Link href="/trackpackage" passHref>
-                    <a className="block px-2 py-2 hover:bg-gray-200 transition">
-                      Track Package
-                    </a>
+                  <Link
+                    href="/trackpackage"
+                    passHref
+                    className="block px-2 py-2 hover:bg-gray-200 transition"
+                  >
+                    Track Package
                   </Link>
                 </li>
                 <li>
-                  <Link href="/helpcenter" passHref>
-                    <a className="block px-2 py-2 hover:bg-gray-200 transition">
-                      Help Center
-                    </a>
+                  <Link
+                    href="/helpcenter"
+                    passHref
+                    className="block px-2 py-2 hover:bg-gray-200 transition"
+                  >
+                    Help Center
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contactus" passHref>
-                    <a className="block px-2 py-2 hover:bg-gray-200 transition">
-                      Contact Us
-                    </a>
+                  <Link
+                    href="/contactus"
+                    passHref
+                    className="block px-2 py-2 hover:bg-gray-200 transition"
+                  >
+                    Contact Us
                   </Link>
                 </li>
               </ul>

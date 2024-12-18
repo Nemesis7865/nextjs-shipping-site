@@ -19,33 +19,45 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-yellow-500">QUICK LINKS</h3>
             <ul className="mt-4 space-y-2 text-sm opacity-80">
               <li>
-                <Link href="/">
-                  <a className="hover:text-yellow-500">Home</a>
+                <Link href="/" 
+                className="hover:text-yellow-500"
+                >
+                  Home
                 </Link>
               </li>
               <li>
-                <Link href="/about">
-                  <a className="hover:text-yellow-500">About us</a>
+                <Link href="/about"
+                className="hover:text-yellow-500"
+                >
+                  AboutUs
                 </Link>
               </li>
               <li>
-                <Link href="/services">
-                  <a className="hover:text-yellow-500">Services</a>
+                <Link href="/services" 
+                className="hover:text-yellow-500"
+                >
+                  Services
                 </Link>
               </li>
               <li>
-                <Link href="/track-package">
-                  <a className="hover:text-yellow-500">Track package</a>
+                <Link href="/track-package"
+                className="hover:text-yellow-500"
+                >
+                  Track package
                 </Link>
               </li>
               <li>
-                <Link href="/help-center">
-                  <a className="hover:text-yellow-500">Help Centre</a>
+                <Link href="/help-center"
+                className="hover:text-yellow-500"
+                >
+                  Help Centr
                 </Link>
               </li>
               <li>
-                <Link href="/contact">
-                  <a className="hover:text-yellow-500">Contact us</a>
+                <Link href="/contact"
+                className="hover:text-yellow-500"
+                >
+                  Contact us
                 </Link>
               </li>
             </ul>
@@ -56,34 +68,34 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-yellow-500">SERVICES</h3>
             <ul className="mt-4 space-y-2 text-sm opacity-80">
               <li>
-                <a href="#" className="hover:text-yellow-500">
+                <Link href="#" className="hover:text-yellow-500">
                   Air freight
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-yellow-500">
+                <Link href="#" className="hover:text-yellow-500">
                   Customs House Brokerage
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-yellow-500">
+                <Link href="#" className="hover:text-yellow-500">
                   Ocean freight
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-yellow-500">
+                <Link href="#" className="hover:text-yellow-500">
                   Project Cargo
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-yellow-500">
+                <Link href="#" className="hover:text-yellow-500">
                   Road and Rail
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-yellow-500">
+                <Link href="#" className="hover:text-yellow-500">
                   Warehousing
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -93,39 +105,39 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-yellow-500">HELP CENTER</h3>
             <ul className="mt-4 space-y-2 text-sm opacity-80">
               <li>
-                <a href="#" className="hover:text-yellow-500">
+                <Link href="#" className="hover:text-yellow-500">
                   Damaged or missing parcel
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-yellow-500">
+                <Link href="#" className="hover:text-yellow-500">
                   I'm not in
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-yellow-500">
+                <Link href="#" className="hover:text-yellow-500">
                   Missed a delivery?
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-yellow-500">
+                <Link href="#" className="hover:text-yellow-500">
                   Parcel returns
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-yellow-500">
+                <Link href="#" className="hover:text-yellow-500">
                   Problems or complaints
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-yellow-500">
+                <Link href="#" className="hover:text-yellow-500">
                   Redelivery
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-yellow-500">
+                <Link href="#" className="hover:text-yellow-500">
                   Tracking
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

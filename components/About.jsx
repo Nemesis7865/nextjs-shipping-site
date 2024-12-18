@@ -1,14 +1,11 @@
 import React from "react";
-import Image from "next/image"; // Use Next.js' Image component for optimization
+import Image from "next/image"; 
 import { FaHandshake, FaClock, FaBolt, FaShieldAlt } from "react-icons/fa";
-import Counter from "../components/Counter"; // Assuming you have a Counter component
-
-// Static imports for images
-import about from "../public/asset/assets/about.jpg";
-import abouta from "../public/asset/assets/abouta.jpg";
-import aboutb from "../public/asset/assets/aboutb.jpg";
-import aboutc from "../public/asset/assets/aboutc.jpg";
+import Counter from "../components/Counter"; 
+import assets from "../asset/assets"
 import Footer from "./Footer";
+
+
 
 const About = () => {
   const counter = [
@@ -18,16 +15,23 @@ const About = () => {
     { label: "Agents Strenght", target: 2530 },
   ];
 
+  console.log("Counter Data:", counter)
+
   return (
     <>
       {/* Image section */}
       <div className="About-us relative w-full h-auto">
-        <Image
-          src={about}
-          alt="About Us"
-          className="w-full h-64 sm:h-80 md:h-96 lg:h-96 object-cover"
-          layout="responsive"
-        />
+      
+
+<Image
+  src={assets.About}
+  alt="About Us"
+  className="w-full h-64 sm:h-80 md:h-96 lg:h-96 object-cover"
+  layout="responsive"
+  width={1200}
+  height={600}
+/>
+
         <div className="absolute inset-0 bg-black opacity-65 flex justify-center items-center">
           <h1 className="text-white font-bold text-3xl md:text-5xl">
             About Us
@@ -72,7 +76,7 @@ const About = () => {
         {/* Mission Section */}
         <div className="flex flex-col items-center text-center lg:text-left lg:items-start max-w-sm">
           <Image
-            src={abouta}
+            src={assets.aboutA}
             alt="Mission"
             className="w-48 sm:w-64 md:w-80 lg:w-96"
             width={300}
@@ -93,7 +97,7 @@ const About = () => {
         {/* Vision Section */}
         <div className="flex flex-col items-center text-center lg:text-left lg:items-start max-w-sm">
           <Image
-            src={aboutb}
+            src={assets.aboutB}
             alt="Vision"
             className="w-48 sm:w-64 md:w-80 lg:w-96"
             width={300}
@@ -116,7 +120,7 @@ const About = () => {
         {/* Team Section */}
         <div className="flex flex-col items-center text-center lg:text-left lg:items-start max-w-sm">
           <Image
-            src={aboutc}
+            src={assets.aboutC}
             alt="The Team"
             className="w-48 sm:w-64 md:w-80 lg:w-96"
             width={300}

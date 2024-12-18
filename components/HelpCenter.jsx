@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import { about } from "../assets/images";
-import AnimateBoxes from "../animate/AnimateBoxes";
+import assets from "@/asset/assets"
+import AnimateBoxes from "./animate/AnimateBoxes";
 
 const HelpCenter = () => {
   return (
@@ -9,7 +9,7 @@ const HelpCenter = () => {
       {/* About Us Section */}
       <div className="About-us relative">
         <Image
-          src={about}
+          src={assets.About}
           alt="About Us"
           className="w-full h-64 sm:h-80 md:h-96 lg:h-72 object-cover"
           layout="fill" // Next.js optimizes the image using layout

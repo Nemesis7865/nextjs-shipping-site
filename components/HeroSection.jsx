@@ -1,12 +1,13 @@
 import Image from "next/image";
-import { useResponsiveness } from "../hooks/useResponsiness";
+import { useResponsiveness } from "./hooks/useResponsiveness";
+import assets from "@/asset/assets"
 import { FaHandshake, FaClock } from "react-icons/fa";
 import { AiOutlineThunderbolt } from "react-icons/ai";
 import { MdOutlineSecurity } from "react-icons/md";
 
 // Example paths for assets
-const hero = "/images/hero.jpg";
-const backgroundImg = "/images/backgroundImg.jpg";
+const hero = "/asset/hero.jpg";
+const backgroundImg = "/asset/backgroundImg.jpg";
 
 const Herosection = () => {
   const isMobile = useResponsiveness("mobile");
@@ -44,7 +45,7 @@ const Herosection = () => {
         {/* Image Container */}
         <div className="w-full bg-slate-100 md:w-auto mb-4 md:mb-0 flex justify-center md:justify-start mt-8">
           <Image
-            src={hero}
+            src={assets.hero}
             alt="hero"
             width={800}
             height={600}

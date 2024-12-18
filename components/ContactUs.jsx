@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import MapContainer from "./Maps";
+import assets from "@/asset/assets";
 
 const ContactUs = () => {
   return (
@@ -8,7 +9,7 @@ const ContactUs = () => {
       {/* Banner Section */}
       <div className="About-us relative w-full h-auto">
         <Image
-          src="/assets/about.jpg" // Assuming the image is in the public folder
+          src={assets.About}
           alt="About Us"
           width={1920}
           height={500}
@@ -74,7 +75,7 @@ const ContactUs = () => {
       {/* Map Section */}
       <div className="w-full h-auto my-14 relative">
         <Image
-          src="/assets/about.jpg" // Replace with actual image path
+          src={assets.About}
           alt="About"
           width={1920}
           height={600}
